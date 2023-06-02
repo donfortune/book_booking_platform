@@ -1,4 +1,5 @@
 import pandas as pd
+from pdf import create_pdf
 
 data = pd.read_csv('articles.csv', dtype={'id': str})
 
@@ -28,6 +29,7 @@ class Articles:
 
 class Receipts:
     def print_receipts(self):
+        create_pdf()
         print(f"{name} has successfully bought {articles.name}")
 
 print(data)
