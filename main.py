@@ -10,7 +10,7 @@ class Articles:
 
     def in_stock(self):
         availability = data.loc[data['id'] == self.articles_id, "in stock"].squeeze()
-        # print(availability)
+        print(availability)
         if availability:
             return True
         else:
